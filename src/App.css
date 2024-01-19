@@ -1,0 +1,242 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background : linear-gradient(90deg, #281273 0%, #251734 100%);
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+.header-nav{
+  height: 60px;
+  position: relative;
+  top: 0;
+  width: 85%;
+  z-index: 100;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-left: 70px;
+  margin-right: 50px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.logo {
+  float: left;
+}
+
+.logo  img {
+  height: 70px;
+  width: auto;
+}
+.nav-list {
+  float: right;
+}
+
+
+.nav-list li {
+  display: inline-block;
+  padding: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-list li a {
+  color: #fefefe;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.nav-list button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 550;
+  padding: 12px 20px;
+  text-transform: uppercase;
+}
+
+.nav-list button:hover {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+  color: #3868d1;
+  text-decoration: none;
+}
+
+.nav-list li a:active {
+  color: #3868d1;
+  text-decoration: none;
+}
+
+.nav-list li a:focus {
+  color: #3868d1;
+  text-decoration: none;
+}
+/* Cover section */
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5rem 0;
+  position: relative; /* Added for positioning of overlay */
+}
+
+.cover-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.cover-text {
+  flex: 1;
+  padding: 0 1rem;
+  text-align: left;
+  z-index: 1; /* Ensure content appears above overlay */
+}
+
+.cover h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cover p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffffff00;
+  color: #ffffff;
+  text-decoration: none;
+  border: 0.5px solid #fefefe;
+}
+
+.cover-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.cover-image img {
+  max-width: 100%;
+  height: auto;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Styling for the About section */
+.About {
+  padding: 80px 0;
+  background : linear-gradient(90deg, #281273 0%, #251734 100%);
+  color: #333;
+}
+
+/* Styling for the About content container */
+.About-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Styling for the About text */
+.About-text {
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* Styling for the About heading */
+.About-text h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the About paragraph */
+.About-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Styling for the Learn More button */
+.cta-button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button2:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the About image container */
+.About-image {
+  text-align: center;
+}
+
+/* Styling for the About image */
+.About-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
