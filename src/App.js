@@ -1,7 +1,7 @@
 import React from "react";
 import { NavbarWithMegaMenu } from "./components/Navbar";
 import Aos from "aos";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import Cover from "./components/cover";
 import Team from "./components/team";
 import Contact from "./components/contact";
